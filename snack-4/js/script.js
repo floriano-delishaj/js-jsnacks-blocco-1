@@ -1,7 +1,7 @@
-let num = prompt('Inserisci un numero di 4 cifre:');
+let num = prompt('Inserisci un numero minore di 4 cifre:');
 let somma = 0;
 
-if (num.length === 4) {
+if (num.length <= 4) {
 
     for (let i = 0; i < num.length; i++) {
     
@@ -12,6 +12,6 @@ if (num.length === 4) {
 
 } else {
 
-    console.log('Il numero dev\'essere di 4 cifre!!!');
+    console.log('Il numero dev\'essere maggiore di 4 cifre!!!');
 
 }
